@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background: #333;
+  color: #fff;
+  padding: 10px;
+  z-index: 100;
+  text-transform: uppercase;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+}
+
+nav ul li a:hover {
+  color: #ff00aa;
+}
+
+nav ul li a.active {
+  color: #ff00aa;
+}
+
+
+/* ... previous CSS code ... */
+
+/* ... previous CSS code ... */
+
+#hero {
+  text-align: center;
+  padding: 100px 0;
+  background: url("images/pexels-pixabay-262508.jpg") center center/cover fixed;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ... previous CSS code ... */
+
+#hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  position: relative;
+  color: #fff;
+  animation: textFadeIn 2s ease forwards;
+  text-transform: uppercase;
+}
+
+#hero h1::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-text-stroke: 2px linear-gradient(to right, #ff8800, #ff00aa);
+  -webkit-text-fill-color: transparent;
+  z-index: -1;
+}
+
+@keyframes textFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ... remaining CSS code ... */
+
+
+#hero p {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: textFadeIn 2s ease forwards;
+  animation-delay: 0.5s;
+}
+
+.btn {
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: buttonFadeIn 2s ease forwards;
+  animation-delay: 1s;
+}
+
+.btn:hover {
+  background-color: #555;
+}
+
+@keyframes buttonFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ... remaining CSS code ... */
+
+
+/* ... previous CSS code ... */
+
+#segments {
+  padding: 50px 0;
+  background: #f2f2f2;
+  text-align: center;
+}
+
+.segment-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.segment {
+  flex: 1;
+  max-width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  margin: 0 10px;
+  animation: segmentFadeIn 1s ease forwards;
+}
+
+@keyframes segmentFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.segment h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.segment p {
+  font-size: 14px;
+  color: #555;
+}
+
+
+
+/* ... previous CSS code ... */
+
+#news-feeds {
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+#news-feeds h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.sub-segment-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.sub-segment {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sub-segment h3 {
+  font-size: 15px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.sub-segment p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Add any additional styling you prefer */
+
+/* ... remaining CSS code ... */
+
+
+/* ... remaining CSS code ... */
+
+
+/* ... previous CSS code ... */
+
+
+/* ... previous CSS code ... */
+#news-feeds h2,
+#upcoming-events h2,
+#jobs h2 {
+  text-align: center;
+  padding: 60px 0;
+  text-transform: uppercase;
+}
+
+
+#news-feeds ul {
+  padding-left: 0;
+  list-style-type: none;
+  text-align: left;
+}
+
+
+.sub-segment-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.sub-segment {
+  flex: 1;
+  max-width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  margin: 0 10px;
+  animation: segmentFadeIn 1s ease forwards;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sub-segment h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.sub-segment p {
+  margin-bottom: 8px;
+  color: #555;
+}
+
+/* ... remaining CSS code ... */
+
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  padding: 10px;
+}
+
+/* Add any additional styling you prefer */
+
